@@ -1,41 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>ZaZa The Vibe • Apps</title>
-<link rel="icon" href="favicon.png">
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 40px;
-}
-h1 { margin-bottom: 30px; }
-a {
-    display: block;
-    margin: 12px 0;
-    color: #9c6bff;
-    font-size: 20px;
-    text-decoration: none;
-}
-a:hover {
-    color: #d9c2ff;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZaZa The Vibe • Apps</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --bg-top: #050010;
+      --bg-bottom: #120022;
+      --card-top: #3b0a78;
+      --card-bottom: #1b0035;
+      --accent: #f58bff;
+      --accent-soft: #d4b4ff;
+      --text-main: #ffffff;
+      --text-muted: #f3e6ff;
+      --link: #f2b3ff;
+      --link-hover: #ffffff;
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --shadow-soft: 0 20px 40px rgba(0,0,0,0.65);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-main);
+      background:
+        radial-gradient(circle at top, #4b1fff 0, transparent 55%),
+        radial-gradient(circle at bottom, #e400ff 0, transparent 60%),
+        linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .hero {
+      width: 100%;
+      display: block;
+      border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .section {
+      margin: 0 16px;
+      margin-top: 16px;
+      background: radial-gradient(circle at top left, var(--card-top), var(--card-bottom));
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      padding: 24px 20px 28px;
+    }
+
+    @media (min-width: 640px) {
+      .section {
+        margin-top: 24px;
+        padding: 32px 32px 36px;
+      }
+    }
+
+    .apps-card h1 {
+      margin: 0 0 20px;
+      font-size: 2rem;
+      line-height: 1.15;
+      letter-spacing: 0.03em;
+    }
+
+    @media (min-width: 640px) {
+      .apps-card h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    .apps-subtitle {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      opacity: 0.9;
+    }
+
+    .app-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .app-list li + li {
+      margin-top: 10px;
+    }
+
+    .app-link {
+      font-size: 1.25rem;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    .app-link:hover,
+    .app-link:focus-visible {
+      color: var(--link-hover);
+    }
+
+    .footer-note {
+      margin-top: 22px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      opacity: 0.85;
+    }
+
+    .privacy-card {
+      text-align: center;
+      margin-top: 24px;
+      background: radial-gradient(circle at top, #2b004e, #0d0016);
+    }
+
+    .privacy-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: 1.25rem;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    .privacy-link:hover,
+    .privacy-link:focus-visible {
+      color: var(--link-hover);
+    }
+
+    .privacy-emoji {
+      font-size: 1.6rem;
+    }
+  </style>
 </head>
 <body>
-<h1>ZaZa The Vibe • Apps</h1>
+  <div class="page">
+    <!-- Top banner image -->
+    <img src="banner.png" alt="ZaZa The Vibe neon tunnel banner" class="hero">
 
-<a href="https://play.google.com/store/apps/details?id=com.ztv.impulse">ZTV Impulse (Play Store)</a>
-<a href="https://play.google.com/store/apps/details?id=tv.ztv.app">ZTV Dream Decoder (Play Store)</a>
-<a href="https://play.google.com/store/apps/details?id=com.ztv.memoryrecall">ZTV Memory Recall (Play Store)</a>
-<a href="https://play.google.com/store/apps/details?id=com.zazathevibe.tarot">ZaZa The Vibe Tarot (Play Store)</a>
+    <!-- Apps list -->
+    <section class="section apps-card">
+      <h1>My Apps on Google Play</h1>
+      <p class="apps-subtitle">
+        Sharpen your mind, deepen your intuition, and level up your daily rituals with these ZaZa The Vibe apps.
+      </p>
 
-<br>
+      <ul class="app-list">
+        <li>
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.ztv.impulse" target="_blank" rel="noopener">
+            ZTV Impulse
+          </a>
+        </li>
+        <li>
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=tv.ztv.app" target="_blank" rel="noopener">
+            ZTV Dream Decoder
+          </a>
+        </li>
+        <li>
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.zazathevibe.tarot" target="_blank" rel="noopener">
+            ZaZa The Vibe Tarot
+          </a>
+        </li>
+        <li>
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.ztv.memoryrecall" target="_blank" rel="noopener">
+            ZTV Memory Recall
+          </a>
+        </li>
+      </ul>
 
-<a href="privacy/">Privacy Policy</a>
+      <p class="footer-note">
+        Tap any app to open it directly on Google Play.
+      </p>
+    </section>
 
+    <!-- Privacy -->
+    <section class="section privacy-card">
+      <a class="privacy-link" href="privacy/">
+        <span class="privacy-emoji">💜</span>
+        <span>Privacy Policy.</span>
+      </a>
+    </section>
+  </div>
 </body>
 </html>
