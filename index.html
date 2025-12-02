@@ -34,15 +34,16 @@
         linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch;
     }
 
+    /* Page wrapper is full-width now */
     .page {
       width: 100%;
-      max-width: 900px;
-      margin: 0 auto 40px auto;
+      margin: 0 0 40px 0;
     }
 
+    /* HERO: edge-to-edge */
     .hero {
       width: 100%;
       display: block;
@@ -50,8 +51,10 @@
       box-shadow: var(--shadow-soft);
     }
 
+    /* Cards: centered column, max 900px */
     .section {
-      margin: 16px;
+      max-width: 900px;
+      margin: 16px auto 0 auto;
       background: radial-gradient(circle at top left, var(--card-top), var(--card-bottom));
       border-radius: var(--radius-xl);
       box-shadow: var(--shadow-soft);
@@ -74,6 +77,13 @@
 
     @media (min-width: 640px) {
       .apps-card h1 { font-size: 2.4rem; }
+    }
+
+    .apps-subtitle {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      opacity: 0.9;
     }
 
     .app-list {
@@ -129,10 +139,15 @@
 </head>
 <body>
   <div class="page">
+    <!-- Full-width banner -->
     <img src="banner.png" alt="ZaZa The Vibe neon tunnel banner" class="hero">
 
+    <!-- Apps list -->
     <section class="section apps-card">
       <h1>My Apps on Google Play</h1>
+      <p class="apps-subtitle">
+        Sharpen your mind, deepen your intuition, and level up your daily rituals with these ZaZa The Vibe apps.
+      </p>
 
       <ul class="app-list">
         <li>
@@ -162,6 +177,7 @@
       </p>
     </section>
 
+    <!-- Privacy -->
     <section class="section privacy-card">
       <a class="privacy-link" href="/privacy/">
         <span class="privacy-emoji">💜</span>
