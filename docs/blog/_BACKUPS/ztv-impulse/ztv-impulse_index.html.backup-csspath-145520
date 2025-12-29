@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZTV Impulse - ZaZa The Vibe</title>
+    <link rel="stylesheet" href="/shared-styles.css">
+</head>
+<body>
+    <div class="ztv-page-header">
+    <img src="/favicon.png" alt="ZaZa The Vibe">
+    <div>
+        <div class="t1">ZaZa The Vibe Apps on Google Play</div>
+        <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+    </div>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/news/">News</a>
+        <a href="/privacy/ztv-privacy.html">Privacy</a>
+        <a href="/terms/">Terms</a>
+    </div>
+</div>
+    
+    <div class="page-container">
+        <div class="app-card">
+            <h1>ZTV Impulse</h1>
+            
+            <p><span class="highlight">Mindful pause before action with intentional breathing.</span></p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+    <a href="https://play.google.com/store/apps/details?id=com.ztv.impulse" 
+       target="_blank" 
+       style="display: inline-block; 
+              background: linear-gradient(135deg, #3b0a78, #1b0035);
+              color: white;
+              padding: 15px 30px;
+              border-radius: 50px;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 1.1rem;
+              border: 2px solid #f58bff;
+              box-shadow: 0 8px 20px rgba(245, 139, 255, 0.3);
+              transition: all 0.3s ease;">
+        🧘‍♂️ Get Impulse on Google Play
+    </a>
+    <p style="margin-top: 10px; opacity: 0.8; font-size: 0.9rem;">
+        Free • Mindfulness tool • Breathing exercises
+    </p>
+</div>
+
+<p>Create space between impulse and action with focused breathing exercises and mindfulness prompts.</p>
+
+<h2>What's inside</h2>
+<ul>
+    <li>🌬️ Guided breathing exercises (4-7-8, box breathing, etc.)</li>
+    <li>⏱️ Impulse delay timer with calming visuals</li>
+    <li>💡 Quick mindfulness prompts for stressful moments</li>
+    <li>📈 Impulse tracking to identify triggers and patterns</li>
+    <li>🎯 Goal setting for impulse management</li>
+</ul>
+
+<h2>How people use it</h2>
+<p>Use before making purchases, during emotional spikes, or when needing a moment to respond instead of react.</p>
+            
+            <div class="section-divider"></div>
+            
+            <h2>More ZaZa The Vibe Apps</h2>
+            <p>Apps that empower your mind, deepen your intuition, and help you grow every day.</p>
+            
+            <div class="app-grid">
+                <div class="app-grid-item">
+                    <a href="/zaza-daily-affirmations/" class="app-link">ZaZa Daily Affirmations</a>
+                    <p>Start your day with positive, personalized affirmations.</p>
+                </div>
+                <div class="app-grid-item">
+                    <a href="/zaza-the-vibe-tarot/" class="app-link">ZaZa The Vibe Tarot</a>
+                    <p>Digital tarot readings with intuitive interpretations.</p>
+                </div>
+                <div class="app-grid-item">
+                    <a href="/ztv-dream-decoder/" class="app-link">ZTV Dream Decoder</a>
+                    <p>Document and analyze your dreams.</p>
+                </div>
+                <div class="app-grid-item">
+                    <a href="/ztv-impulse/" class="app-link">ZTV Impulse</a>
+                    <p>Mindful pause before action with intentional breathing.</p>
+                </div>
+                <div class="app-grid-item">
+                    <a href="/ztv-memory-recall/" class="app-link">ZTV Memory Recall</a>
+                    <p>Strengthen cognitive recall through exercises.</p>
+                </div>
+                <div class="app-grid-item">
+                    <a href="/ztv-wordseek/" class="app-link">ZTV WordSeek</a>
+                    <p>Vocabulary builder with contextual learning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>© 2025 ZaZa The Vibe. All apps available on Google Play.</p>
+        <p>Independent digital tools for mindful living.</p>
+    </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaZa The Vibe - All Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 4em;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .app-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.3);
+            border-color: white;
+        }
+
+        .app-icon {
+            width: 140px;
+            height: 140px;
+            border-radius: 30px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            font-size: 42px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .wordseek-icon {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        .affirmations-icon {
+            background: linear-gradient(135deg, #ec4899 0%, #f59e0b 100%);
+        }
+
+        .tarot-icon {
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+        }
+
+        .app-title {
+            font-size: 2.2em;
+            color: #1e293b;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .app-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .app-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .wordseek-button {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+        }
+
+        .affirmations-button {
+            background: linear-gradient(135deg, #ec4899 0%, #f59e0b 100%);
+            color: white;
+        }
+
+        .tarot-button {
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+            color: white;
+        }
+
+        .app-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .app-button i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px;
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .apps-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            
+            .app-card {
+                padding: 30px 20px;
+            }
+            
+            .logo {
+                font-size: 3em;
+            }
+            
+            .tagline {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">ZaZa The Vibe</div>
+            <p class="tagline">Discover amazing apps for entertainment, self-improvement, and spiritual growth</p>
+        </div>
+        
+        <div class="apps-grid">
+            <!-- ZTV WordSeek Card -->
+            <div class="app-card" onclick="window.location.href='ztv-wordseek.html'">
+                <div class="app-icon wordseek-icon">ZTV<br>WORD<br>SEEK</div>
+                <h2 class="app-title">ZTV WordSeek</h2>
+                <p class="app-description">
+                    Challenge your mind with exciting word search puzzles. Find hidden words, 
+                    train your brain, and enjoy beautifully designed puzzles with various themes.
+                </p>
+                <a href="ztv-wordseek.html" class="app-button wordseek-button">
+                    <i class="fas fa-gamepad"></i> Explore App
+                </a>
+            </div>
+            
+            <!-- ZaZa Daily Affirmations Card -->
+            <div class="app-card" onclick="window.location.href='zaza-daily-affirmations.html'">
+                <div class="app-icon affirmations-icon">ZaZa<br>DAILY<br>AFFIRMATIONS</div>
+                <h2 class="app-title">ZaZa Daily Affirmations</h2>
+                <p class="app-description">
+                    Start your day with positivity and mindfulness. Receive daily affirmations, 
+                    track your mood, and build a positive mindset through meditation and self-love.
+                </p>
+                <a href="zaza-daily-affirmations.html" class="app-button affirmations-button">
+                    <i class="fas fa-heart"></i> Explore App
+                </a>
+            </div>
+            
+            <!-- Zaza The Vibe Tarot Card -->
+            <div class="app-card" onclick="window.location.href='zaza-the-vibe-tarot.html'">
+                <div class="app-icon tarot-icon">ZaZa<br>TAROT</div>
+                <h2 class="app-title">Zaza The Vibe Tarot</h2>
+                <p class="app-description">
+                    Explore the mystical world of tarot cards. Get daily readings, learn about 
+                    card meanings, and discover spiritual insights for personal growth.
+                </p>
+                <a href="zaza-the-vibe-tarot.html" class="app-button tarot-button">
+                    <i class="fas fa-crystal-ball"></i> Explore App
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 ZaZa The Vibe. All apps available on Google Play Store.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Follow us for updates and new releases!</p>
+        </div>
+    </div>
+    
+    <script>
+        // Add click effect to all app cards
+        document.querySelectorAll('.app-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (!e.target.closest('a')) {
+                    const link = this.querySelector('a');
+                    if (link) {
+                        window.location.href = link.href;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

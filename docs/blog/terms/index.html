@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms of Service - ZaZa The Vibe</title>
+    
+    <!-- EXACT SAME STYLES AS PRIVACY PAGE -->
+    <style>
+        :root {
+            --bg-top: #050010;
+            --bg-bottom: #120022;
+            --card-top: #3b0a78;
+            --card-bottom: #1b0035;
+            --accent: #f58bff;
+            --accent-soft: #d4b4ff;
+            --text-main: #ffffff;
+            --text-muted: #f3e6ff;
+            --link: #f2b3ff;
+            --link-hover: #ffffff;
+            --radius-xl: 32px;
+            --shadow-soft: 0 20px 40px rgba(0,0,0,0.65);
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--text-main);
+            background: radial-gradient(circle at top, #4b1fff 0, transparent 55%),
+                        radial-gradient(circle at bottom, #e400ff 0, transparent 60%),
+                        linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
+            line-height: 1.6;
+        }
+        
+        .ztv-page-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            background: rgba(0,0,0,.18);
+            border-bottom: 1px solid rgba(255,255,255,.12);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .ztv-page-header img {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,.35);
+        }
+        
+        .ztv-page-header .t1 {
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: .2px;
+            line-height: 1.1;
+        }
+        
+        .ztv-page-header .t2 {
+            font-size: 12px;
+            opacity: .9;
+            line-height: 1.2;
+        }
+        
+        .ztv-page-header .nav {
+            margin-left: auto;
+            font-size: 12px;
+            opacity: .95;
+            white-space: nowrap;
+        }
+        
+        .ztv-page-header .nav a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: var(--accent-soft);
+        }
+        
+        .ztv-page-header .nav a:hover {
+            color: var(--link-hover);
+        }
+        
+        .page-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-card {
+            background: radial-gradient(circle at top left, var(--card-top), var(--card-bottom));
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-soft);
+            padding: 40px;
+            margin: 30px 0;
+        }
+        
+        .content-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin: 30px 0 15px 0;
+            color: var(--accent);
+            border-bottom: 2px solid rgba(245, 139, 255, 0.3);
+            padding-bottom: 8px;
+        }
+        
+        .content-card p, .content-card li {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .content-card ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .content-card a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        
+        .content-card a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--card-top), var(--card-bottom));
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid var(--accent);
+            box-shadow: 0 8px 20px rgba(245, 139, 255, 0.2);
+            transition: all 0.3s ease;
+            margin: 30px auto;
+            text-align: center;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(245, 139, 255, 0.3);
+        }
+        
+        .site-footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-container {
+                padding: 10px;
+            }
+            
+            .content-card {
+                padding: 25px;
+            }
+            
+            .content-card h1 {
+                font-size: 2rem;
+            }
+            
+            .ztv-page-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+            
+            .ztv-page-header .nav {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ztv-page-header">
+        <img src="/favicon.png" alt="ZaZa The Vibe">
+        <div>
+            <div class="t1">ZaZa The Vibe Apps on Google Play</div>
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+        </div>
+        <div class="nav">
+            <a href="/">Home</a>
+            <a href="/news/">News</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+        </div>
+    </div>
+    
+    <div class="page-container">
+        <div class="content-card">
+            <h1>Terms of Service</h1>
+            
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing or using this website or any associated applications, services, or content, you agree to comply with and be bound by these Terms of Service. If you do not agree, you must discontinue use immediately.</p>
+            
+            <h2>Eligibility</h2>
+            <p>You must be at least 13 years old to use this website or any related services. If you are under 18, you confirm you have permission from a parent or legal guardian.</p>
+            
+            <h2>Permitted Use</h2>
+            <p>You agree to use this site only for lawful purposes and in compliance with all applicable laws. You may not misuse, interfere with, or attempt unauthorized access to the site or its systems.</p>
+            
+            <h2>Intellectual Property</h2>
+            <p>All content, applications, software, branding, and materials are owned by or licensed to ZaZa the Vibe and are protected by applicable intellectual property laws.</p>
+            
+            <h2>Advertising and Monetization</h2>
+            <p>This site and related applications may display advertisements provided by third-party networks including Google AdSense and Google AdMob. These services may use cookies, device identifiers, and similar technologies to serve relevant ads and measure performance in accordance with Google policies.</p>
+            
+            <h2>Data Collection and Privacy</h2>
+            <p>Limited non-personally identifiable information such as device data, IP address, and usage statistics may be collected for analytics, security, and advertising purposes in compliance with applicable laws and Google advertising requirements.</p>
+            
+            <h2>Third-Party Services</h2>
+            <p>This site may link to or integrate third-party services. ZaZa The Vibe is not responsible for third-party content, policies, or practices.</p>
+            
+            <h2>Disclaimer of Warranties</h2>
+            <p>This site is provided on an "as is" and "as available" basis without warranties of any kind.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, ZaZa The Vibe shall not be liable for any damages arising from use of this site or associated services.</p>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="/" class="back-button">← Back to All Apps</a>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>© 2025 ZaZa The Vibe. All apps available on Google Play.</p>
+        <p>Independent digital tools for mindful living.</p>
+    </footer>
+</body>
+</html>

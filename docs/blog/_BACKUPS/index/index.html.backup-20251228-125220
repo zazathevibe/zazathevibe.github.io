@@ -1,0 +1,99 @@
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>ZaZa The Vibe – Privacy-Focused Android Utility & Productivity Apps</title>
+<style> :root { --bg-top: #050010; --bg-bottom: #120022; --card-top: #3b0a78; --card-bottom: #1b0035; --accent: #f58bff; --accent-soft: #d4b4ff; --text-main: #ffffff; --text-muted: #f3e6ff; --link: #f2b3ff; --link-hover: #ffffff; --radius-xl: 32px; --shadow-soft: 0 20px 40px rgba(0,0,0,0.65); } * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text-main); background: radial-gradient(circle at top, #4b1fff 0, transparent 55%), radial-gradient(circle at bottom, #e400ff 0, transparent 60%), linear-gradient(to bottom, var(--bg-top), var(--bg-bottom)); display: flex; flex-direction: column; align-items: stretch; } /* Page wrapper is full-width now */ .page { width: 100%; margin: 0 0 40px 0; } /* HERO: edge-to-edge */ .hero { width: 100%; display: block; border-radius: 0 0 var(--radius-xl) var(--radius-xl); box-shadow: var(--shadow-soft); } /* Cards: centered column, max 900px */ section { max-width: 900px; margin: 16px auto 0 auto; background: radial-gradient(circle at top left, var(--card-top), var(--card-bottom)); border-radius: var(--radius-xl); box-shadow: var(--shadow-soft); padding: 24px 20px 28px; } @media (min-width: 640px) { .section { margin-top: 24px; padding: 32px 32px 36px; } } .apps-card h1 { margin: 0 0 20px; font-size: 2rem; line-height: 1.15; letter-spacing: 0.03em; } @media (min-width: 640px) { .apps-card h1 { font-size: 2.4rem; } } .apps-subtitle { margin: 0 0 18px; font-size: 0.95rem; color: var(--text-muted); opacity: 0.9; } .app-list { list-style: none; padding: 0; margin: 0; } .app-list li + li { margin-top: 10px; } .app-link { font-size: 1.25rem; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; color: var(--link); font-weight: 600; } .app-link:hover, .app-link:focus-visible { color: var(--link-hover); } .footer-note { margin-top: 22px; font-size: 0.9rem; color: var(--text-muted); opacity: 0.85; } .privacy-card { text-align: center; margin-top: 24px; background: radial-gradient(circle at top, #2b004e, #0d0016); } .privacy-link { display: inline-flex; align-items: center; gap: 0.5em; font-size: 1.25rem; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; color: var(--link); font-weight: 600; } .privacy-link:hover, .privacy-link:focus-visible { color: var(--link-hover); } .privacy-emoji { font-size: 1.6rem; } </style> <meta name="description" content="Apps that empower your mind, deepen your intuition, and help you grow every day - check out all ZaZa The Vibe apps on Google Play." /> <link rel="canonical" href="https://zazathevibe.github.io/" /> <meta property="og:type" content="website" /> <meta property="og:title" content="ZaZa The Vibe  Apps on Google Play" /> <meta property="og:description" content="Apps that empower your mind, deepen your intuition, and help you grow every day - check out all ZaZa The Vibe apps on Google Play." /> <meta property="og:url" content="https://zazathevibe.github.io/" /> <meta property="og:image" content="https://zazathevibe.github.io/banner.png" /> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:title" content="ZaZa The Vibe  Apps on Google Play" /> <meta name="twitter:description" content="Apps that empower your mind, deepen your intuition, and help you grow every day - check out all ZaZa The Vibe apps on Google Play." /> <meta name="twitter:image" content="https://zazathevibe.github.io/banner.png" /> <meta name="twitter:site" content="@zazathevibe" /> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Organization", "name": "ZaZa The Vibe", "url": "https://zazathevibe.github.io/", "logo": "https://zazathevibe.github.io/banner.png", "sameAs": [ "https://www.instagram.com/zaza.the.vibe.tarot", "https://x.com/zazathevibe", "https://www.tiktok.com/@zazathevibetarot", "https://www.youtube.com/@zazathevibetarot" ] } </script> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4990119339246817" crossorigin="anonymous"></script> <!-- ZTV_THEME_V1 --> <meta name="theme-color" content="#2b0a5e"> <style id="ztv-theme-style"> :root{ --ztv-bg1:#120020; --ztv-bg2:#3a00b8; --ztv-bg3:#b300ff; --ztv-text:#ffffff; --ztv-link:#d9b8ff; --ztv-link2:#ffffff; } html,body{height:100%;} body{ margin:0; color:var(--ztv-text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:radial-gradient(circle at 50% 25%, var(--ztv-bg2) 0%, var(--ztv-bg1) 45%, var(--ztv-bg3) 130%); background-attachment:fixed; } a{color:var(--ztv-link);} a:hover{color:var(--ztv-link2);} /* Keep default pages readable without destroying existing layouts */ .ztv-page-header{ display:flex; align-items:center; gap:12px; padding:14px 18px; background:rgba(0,0,0,.18); border-bottom:1px solid rgba(255,255,255,.12); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); } .ztv-page-header img{ width:28px;height:28px;border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,.35); } .ztv-page-header .t1{font-weight:800;font-size:14px;letter-spacing:.2px;line-height:1.1;} .ztv-page-header .t2{font-size:12px;opacity:.9;line-height:1.2;} .ztv-page-header .nav{margin-left:auto;font-size:12px;opacity:.95;white-space:nowrap;} .ztv-page-header .nav a{margin-left:10px;text-decoration:none;} /* Make plain text pages not sit flush to the edges */ .ztv-plain-wrap{max-width:1100px;padding:22px 18px;} </style> <!-- ZTV_FAVICON_V1 --> <link rel="icon" href="/favicon.ico?v=20251220115900"> <link rel="shortcut icon" href="/favicon.ico?v=20251220115900"> <link rel="icon" type="image/png" href="/favicon.png?v=20251220115900"> <link rel="apple-touch-icon" href="/favicon.png?v=20251220115900"> <meta name="theme-color" content="#2b0a5e">
+</head> <body>
+<div class="ztv-page-header"> <img src="favicon.png" alt="ZaZa The Vibe" alt="ZaZa The Vibe Android app branding"> <div> <div class="t1">ZaZa The Vibe  Apps on Google Play</div> <div class="t2">Official developer page — clean, direct, and built for real use.</div> </div> <div class="nav"><a href="">Home</a>&nbsp;&nbsp;<a href="/news/">News</a>&nbsp;&nbsp;<a href="/privacy/ztv-privacy.html">Privacy</a>&nbsp;&nbsp;<a href="/terms/">Terms</a></div>
+</div> <div class="page"> <!-- Full-width banner --> <img src="banner.png" alt="ZaZa The Vibe neon tunnel banner" class="hero" alt="ZaZa The Vibe Android app branding"> <!-- Apps list -->
+<section class="section apps-card">
+  <h1>My Apps on Google Play</h1>
+  <p class="apps-subtitle">
+    Sharpen your mind, deepen your intuition, and level up your daily rituals with these ZaZa The Vibe apps.
+  </p>
+
+  <!-- MOVE APP LINKS TO TOP - Most Important First -->
+  <div style="margin: 24px 0 32px 0;">
+    <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; color: var(--accent-soft);">
+      Available Apps – Tap to Open on Google Play
+    </div>
+    <ul class="app-list">
+      <li><a class="app-link" href="/zaza-daily-affirmations/" target="_blank" rel="noopener">ZaZa Daily Affirmations</a></li>
+      <li><a class="app-link" href="/zaza-the-vibe-tarot/" target="_blank" rel="noopener">ZaZa The Vibe Tarot</a></li>
+      <li><a class="app-link" href="/ztv-dream-decoder/" target="_blank" rel="noopener">ZTV Dream Decoder</a></li>
+      <li><a class="app-link" href="/ztv-impulse/" target="_blank" rel="noopener">ZTV Impulse</a></li>
+      <li><a class="app-link" href="/ztv-memory-recall/" target="_blank" rel="noopener">ZTV Memory Recall</a></li>
+      <li><a class="app-link" href="/ztv-wordseek/" target="_blank" rel="noopener">ZTV WordSeek</a></li>
+    </ul>
+    <p style="margin-top: 16px; font-size: 0.95rem; opacity: 0.9; color: var(--text-muted);">
+      ↳ Direct links to Google Play listings. All apps available by January 2026.
+    </p>
+  </div>
+
+  <!-- Subtle visual separator -->
+  <div style="height: 1px; background: rgba(255,255,255,0.1); margin: 32px 0;"></div>
+
+  <!-- About Section (all original text, just better formatted) -->
+  <div style="margin-bottom: 32px;">
+    <div style="font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; color: var(--accent-soft);">
+      About ZaZa The Vibe
+    </div>
+    <div style="line-height: 1.6; opacity: 0.95;">
+      This is the official ZaZa The Vibe developer hub. Each app below has a dedicated page so users and reviewers can see what it is, what’s inside, and how it’s used.
+    </div>
+    
+    <div style="margin-top: 16px; line-height: 1.6; opacity: 0.95;">
+      ZaZa The Vibe is an independent creative project spanning Android apps,
+      visual art, streaming, and interactive digital tools.
+    </div>
+    <div style="margin-top: 8px; line-height: 1.6; opacity: 0.95;">
+      This work emerged from a forced reset — a moment where continuing the previous
+      path was no longer viable, and rebuilding a life worth living became the priority.
+    </div>
+    <div style="margin-top: 8px; line-height: 1.6; opacity: 0.95;">
+      AI is used as a practical tool — accelerating learning, enabling execution,
+      and making previously unreachable ideas achievable.
+    </div>
+    <div style="margin-top: 8px; line-height: 1.6; opacity: 0.95;">
+      What exists here is an intentional, evolving creative ecosystem designed to grow over time.
+    </div>
+  </div>
+
+  <!-- App Store Philosophy Section -->
+  <div>
+    <div style="font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; color: var(--accent-soft);">
+      ZaZa’s App Store Philosophy
+    </div>
+    <div style="line-height: 1.6; opacity: 0.95;">
+      The ZTV app lineup focuses on short, focused experiences that respect the user’s time.
+      Each app commits to a single purpose and executes it cleanly.
+    </div>
+    <div style="margin-top: 12px; line-height: 1.6; opacity: 0.95;">
+      If you click an app link and do not see it yet, nothing is wrong.
+      Apps are published by Google Play at different times.
+      All apps will be available by January 2026.
+    </div>
+    <div style="margin-top: 12px; line-height: 1.6; opacity: 0.95;">
+      This site serves as the official ZaZa The Vibe App Store — providing direct access
+      to Google Play listings, app details, and ongoing project updates.
+    </div>
+  </div>
+</section> <!-- Privacy --> </div>   </body> </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

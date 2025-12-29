@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News & Updates - ZaZa The Vibe</title>
+    <link rel="stylesheet" href="./shared-styles.css">
+    <style>
+        /* Page-specific styles for legal/content pages */
+        .content-card {
+            background: radial-gradient(circle at top left, var(--card-top), var(--card-bottom));
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-soft);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+        
+        .content-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin: 30px 0 15px 0;
+            color: var(--accent);
+            border-bottom: 2px solid rgba(245, 139, 255, 0.3);
+            padding-bottom: 8px;
+        }
+        
+        .content-card h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            color: var(--accent-soft);
+        }
+        
+        .content-card p, .content-card li {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .content-card ul, .content-card ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .content-card a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        
+        .content-card a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+        
+        .page-date {
+            display: inline-block;
+            background: rgba(245, 139, 255, 0.15);
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        .app-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .app-list-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .app-list-item h4 {
+            margin: 0 0 10px 0;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+        
+        .highlight-box {
+            background: rgba(245, 139, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 4px solid var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="ztv-page-header">
+        <img src="./favicon.png" alt="ZaZa The Vibe">
+        <div>
+            <div class="t1">ZaZa The Vibe Apps on Google Play</div>
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+        </div>
+        <div class="nav">
+            <a href="./">Home</a>
+            <a href="./news/">News</a>
+            <a href="./privacy/">Privacy</a>
+            <a href="./terms/">Terms</a>
+        </div>
+    </div>
+    
+    <div class="page-container">
+        <div class="content-card">
+            <p>
+As of <strong>December 26, 2025</strong>, the <strong>ZaZa The Vibe Tarot</strong> app has been officially
+<strong>approved and published on the Google Play Store</strong>.
+</p>
+
+<p>
+This marks a major milestone for the ZaZa the Vibe Universe. What began as an idea has grown into
+a real, expanding ecosystem of Android applications built with intention, care, and a focus on
+meaningful user experience.
+</p>
+
+<p>
+The remaining apps listed below are currently in active testing and final review.
+They are on track to become publicly available in <strong>January 2026</strong>.
+</p>
+
+<h2>Apps Releasing in January 2026 🚀</h2>
+
+<h3>🧠 ZTV Impulse</h3>
+<p>A fast-paced memory and reaction game designed to challenge focus, speed, and visual recall.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-impulse/" target="_blank" rel="noopener">Visit ZTV Impulse</a></p>
+
+<h3>🔮 ZTV Dream Decoder</h3>
+<p>A grounded dream interpretation app for symbols, words, and numbers.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-dream-decoder/" target="_blank" rel="noopener">Visit ZTV Dream Decoder</a></p>
+
+<h3>🃏 ZaZa The Vibe Tarot</h3>
+<p>A clarity-focused tarot experience built around intuition and self-reflection.</p>
+<p>👉 <a href="https://zazathevibe.github.io/zaza-the-vibe-tarot/" target="_blank" rel="noopener">Visit ZaZa The Vibe Tarot</a></p>
+
+<h3>🧩 ZTV Memory Recall</h3>
+<p>A structured brain-training app designed to strengthen recall accuracy.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-memory-recall/" target="_blank" rel="noopener">Visit ZTV Memory Recall</a></p>
+
+<h3>📖 ZTV WordSeek</h3>
+<p>A relaxed vocabulary and word-pattern challenge game.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-wordseek/" target="_blank" rel="noopener">Visit ZTV WordSeek</a></p>
+
+<h3>🌱 ZTV Daily Affirmations</h3>
+<p>A calm, consistency-driven daily affirmation experience.</p>
+<p>👉 <a href="https://zazathevibe.github.io/zaza-daily-affirmations/" target="_blank" rel="noopener">Visit ZaZa Daily Affirmations</a></p>
+
+<h2>Behind the Scenes</h2>
+<ul>
+  <li>Multiple apps required dozens of version uploads to reach compliance</li>
+  <li>No prior Android or coding experience</li>
+  <li>Everything learned step-by-step with AI assistance</li>
+  <li>This website was built using the same process</li>
+</ul>
+
+<h2>Built by a Self-Taught Developer 🤍</h2>
+<p>This ecosystem exists because of persistence, iteration, and refusing to quit.</p>
+
+<h2>Stay Connected 🌍</h2>
+<p>
+TikTok: <a href="https://www.tiktok.com/@zazathevibe" target="_blank" rel="noopener">tiktok.com/@zazathevibe</a><br>
+Instagram: <a href="https://www.instagram.com/zaza.the.vibe" target="_blank" rel="noopener">instagram.com/zaza.the.vibe</a>
+</p>
+
+<h2>What’s Next</h2>
+<p>This News page will continue to host official publishing and release updates.</p>
+
+<p>Thank you for being part of this journey 💜</p>
+</div>
+        </div>
+        
+        <!-- Link back to main apps page -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="./" style="display: inline-block; 
+                              background: linear-gradient(135deg, var(--card-top), var(--card-bottom));
+                              color: white;
+                              padding: 12px 25px;
+                              border-radius: 50px;
+                              text-decoration: none;
+                              font-weight: bold;
+                              border: 2px solid var(--accent);
+                              transition: all 0.3s ease;">
+                ← Back to All Apps
+            </a>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>© 2025 ZaZa The Vibe. All apps available on Google Play.</p>
+        <p>Independent digital tools for mindful living.</p>
+    </footer>
+</body>
+</html>

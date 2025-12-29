@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News & Updates - ZaZa The Vibe</title>
+    <link rel="stylesheet" href="../shared-styles.css">
+    <style>
+        /* Page-specific enhancements */
+        .page-header-spacing {
+            margin-bottom: 30px;
+        }
+        
+        .content-wrapper {
+            min-height: 70vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- CORRECT HEADER -->
+    <div class="ztv-page-header">
+        <img src="../favicon.png" alt="ZaZa The Vibe">
+        <div>
+            <div class="t1">ZaZa The Vibe Apps on Google Play</div>
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+        </div>
+        <div class="nav">
+            <a href="../">Home</a>
+            <a href="../news/">News</a>
+            <a href="../privacy/">Privacy</a>
+            <a href="../terms/">Terms</a>
+        </div>
+    </div>
+    
+    <div class="page-container">
+        <div class="content-card">
+
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+        </div>
+        <div class="nav">
+            <a href="/">Home</a>
+            <a href="/news/">News</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+        </div>
+    </div>
+    
+    
+        <div class="content-card">
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+    </div>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/news/">News</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+    </div>
+</div>
+    <!-- HEADER FROM MAIN PAGE -->
+    
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+        </div>
+        <div class="nav">
+            <a href="./">Home</a>
+            <a href="./news/">News</a>
+            <a href="./privacy/">Privacy</a>
+            <a href="./terms/">Terms</a>
+        </div>
+    </div>
+
+    
+        <div class="content-card">
+            
+            <div class="t2">Official developer page — clean, direct, and built for real use.</div>
+        </div>
+        <div class="nav">
+            <a href="./">Home</a>
+            <a href="./news/">News</a>
+            <a href="./privacy/">Privacy</a>
+            <a href="./terms/">Terms</a>
+        </div>
+    </div>
+    
+    
+        <div class="content-card">
+            <p>
+As of <strong>December 26, 2025</strong>, the <strong>ZaZa The Vibe Tarot</strong> app has been officially
+<strong>approved and published on the Google Play Store</strong>.
+</p>
+
+<p>
+This marks a major milestone for the ZaZa the Vibe Universe. What began as an idea has grown into
+a real, expanding ecosystem of Android applications built with intention, care, and a focus on
+meaningful user experience.
+</p>
+
+<p>
+The remaining apps listed below are currently in active testing and final review.
+They are on track to become publicly available in <strong>January 2026</strong>.
+</p>
+
+<h2>Apps Releasing in January 2026 🚀</h2>
+
+<h3>🧠 ZTV Impulse</h3>
+<p>A fast-paced memory and reaction game designed to challenge focus, speed, and visual recall.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-impulse/" target="_blank" rel="noopener">Visit ZTV Impulse</a></p>
+
+<h3>🔮 ZTV Dream Decoder</h3>
+<p>A grounded dream interpretation app for symbols, words, and numbers.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-dream-decoder/" target="_blank" rel="noopener">Visit ZTV Dream Decoder</a></p>
+
+<h3>🃏 ZaZa The Vibe Tarot</h3>
+<p>A clarity-focused tarot experience built around intuition and self-reflection.</p>
+<p>👉 <a href="https://zazathevibe.github.io/zaza-the-vibe-tarot/" target="_blank" rel="noopener">Visit ZaZa The Vibe Tarot</a></p>
+
+<h3>🧩 ZTV Memory Recall</h3>
+<p>A structured brain-training app designed to strengthen recall accuracy.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-memory-recall/" target="_blank" rel="noopener">Visit ZTV Memory Recall</a></p>
+
+<h3>📖 ZTV WordSeek</h3>
+<p>A relaxed vocabulary and word-pattern challenge game.</p>
+<p>👉 <a href="https://zazathevibe.github.io/ztv-wordseek/" target="_blank" rel="noopener">Visit ZTV WordSeek</a></p>
+
+<h3>🌱 ZTV Daily Affirmations</h3>
+<p>A calm, consistency-driven daily affirmation experience.</p>
+<p>👉 <a href="https://zazathevibe.github.io/zaza-daily-affirmations/" target="_blank" rel="noopener">Visit ZaZa Daily Affirmations</a></p>
+
+<h2>Behind the Scenes</h2>
+<ul>
+  <li>Multiple apps required dozens of version uploads to reach compliance</li>
+  <li>No prior Android or coding experience</li>
+  <li>Everything learned step-by-step with AI assistance</li>
+  <li>This website was built using the same process</li>
+</ul>
+
+<h2>Built by a Self-Taught Developer 🤍</h2>
+<p>This ecosystem exists because of persistence, iteration, and refusing to quit.</p>
+
+<h2>Stay Connected 🌍</h2>
+<p>
+TikTok: <a href="https://www.tiktok.com/@zazathevibe" target="_blank" rel="noopener">tiktok.com/@zazathevibe</a><br>
+Instagram: <a href="https://www.instagram.com/zaza.the.vibe" target="_blank" rel="noopener">instagram.com/zaza.the.vibe</a>
+</p>
+
+<h2>What’s Next</h2>
+<p>This News page will continue to host official publishing and release updates.</p>
+
+<p>Thank you for being part of this journey 💜</p>
+</div>
+        </div>
+        
+        <!-- Link back to main apps page -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="./" style="display: inline-block; 
+                              background: linear-gradient(135deg, var(--card-top), var(--card-bottom));
+                              color: white;
+                              padding: 12px 25px;
+                              border-radius: 50px;
+                              text-decoration: none;
+                              font-weight: bold;
+                              border: 2px solid var(--accent);
+                              transition: all 0.3s ease;">
+                ← Back to All Apps
+            </a>
+        </div>
+    </div>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="./" style="display: inline-block;
+                              background: linear-gradient(135deg, var(--card-top), var(--card-bottom));
+                              color: white;
+                              padding: 12px 25px;
+                              border-radius: 50px;
+                              text-decoration: none;
+                              font-weight: bold;
+                              border: 2px solid var(--accent);
+                              transition: all 0.3s ease;">
+                ← Back to All Apps
+            </a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2025 ZaZa The Vibe. All apps available on Google Play.</p>
+        <p>Independent digital tools for mindful living.</p>
+    </footer>
+        </div>
+        
+        <!-- Back button -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="/" style="display: inline-block; 
+                              background: linear-gradient(135deg, var(--card-top), var(--card-bottom));
+                              color: white;
+                              padding: 12px 25px;
+                              border-radius: 50px;
+                              text-decoration: none;
+                              font-weight: bold;
+                              border: 2px solid var(--accent);
+                              box-shadow: 0 8px 20px rgba(245, 139, 255, 0.2);
+                              transition: all 0.3s ease;">
+                ← Back to All Apps
+            </a>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>© 2025 ZaZa The Vibe. All apps available on Google Play.</p>
+        <p>Independent digital tools for mindful living.</p>
+    </footer>
+        </div>
+        
+        <!-- Back button -->
+        <div style="text-align: center;">
+            <a href="../" class="back-button">
+                ← Back to All Apps
+            </a>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>© 2025 ZaZa The Vibe. All apps available on Google Play.</p>
+        <p>Independent digital tools for mindful living.</p>
+    </footer>
+</body>
+</html>

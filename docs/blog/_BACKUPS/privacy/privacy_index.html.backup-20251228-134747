@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;font-family:system-ui;background:#120020;color:#fff}
+.header{display:flex;align-items:center;padding:14px 18px;background:#1a0833}
+.header img{width:28px;height:28px;border-radius:8px}
+.nav{margin-left:auto}
+.nav a{color:#d7b8ff;text-decoration:none;font-weight:600}
+.wrap{max-width:980px;margin:24px auto;padding:26px;background:rgba(0,0,0,.35);border-radius:18px}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="/favicon.png">
+<div style="margin-left:12px">
+<b>Privacy Policy</b><br>
+<span style="font-size:12px;opacity:.8">Official developer page</span>
+</div>
+<div class="nav">
+<a href="/">Home</a>
+</div>
+</div>
+
+<div class="wrap">
+<h1>Privacy Policy</h1>
+
+<p>This Privacy Policy applies to this website and all mobile applications published under the ZTV / ZaZa The Vibe developer account.</p>
+
+<h2>Information We Do Not Collect</h2>
+<p>We do not collect, store, sell, or share personal information such as names, email addresses, precise location data, photos, files, financial information, or user-generated content.</p>
+
+<h2>Advertising and Cookies</h2>
+<p>This site and associated applications display advertisements provided by third-party networks including Google AdSense and Google AdMob. These services may use cookies, device identifiers, and similar technologies to serve advertisements and measure performance.</p>
+
+<ul>
+  <li>Google and its partners may serve ads based on prior visits to this website or other websites</li>
+  <li>Collected data may include device identifiers, approximate location, ad interaction data, and diagnostics</li>
+</ul>
+
+<p>You may opt out of personalized advertising by visiting
+<a href="https://www.google.com/settings/ads">Google Ad Settings</a>
+or <a href="https://www.aboutads.info/">aboutads.info</a>.
+This does not remove ads, only personalization.</p>
+
+<h2>Third-Party Data</h2>
+<p>Advertising data is governed by Google’s own privacy policies.
+See <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Children’s Privacy</h2>
+<p>This website and applications are not directed to children under the age of 13.
+No personal information from children under 13 is knowingly collected.</p>
+
+<h2>Data Retention</h2>
+<p>No personal user data is retained by the developer.</p>
+
+<h2>Contact</h2>
+<p>zazathevibetarot@gmail.com</p>
+</body>
+</html>
+<!-- rebuild 2025-12-19T16:19:35.3209501-05:00 -->
+
+
+
+
+
+
+
+

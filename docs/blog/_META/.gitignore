@@ -1,0 +1,9 @@
+_ZTV_SITE_BACKUPS/
+* - Copy/
+*.bak
+*.backup
+index.html.backup.*
+sitemap-BOSGAME-*.xml
+apps/index.html
+apps/*/index-BOSGAME-*.html
+*.html.backup

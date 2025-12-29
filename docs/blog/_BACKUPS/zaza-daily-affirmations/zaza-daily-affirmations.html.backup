@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaZa Daily Affirmations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Apps
+            </a>
+            <div class="app-icon">
+                <div class="icon-circle">
+                    <span>ZaZa<br>DAILY<br>AFFIRMATIONS</span>
+                </div>
+            </div>
+            <h1>ZaZa Daily Affirmations</h1>
+            <p class="subtitle">Positive Thinking & Mindfulness</p>
+            <a href="https://play.google.com/store/apps/details?id=com.zaza.dailyaffirmations" class="store-btn" target="_blank">
+                <i class="fab fa-google-play"></i>
+                <span>Download on Google Play</span>
+            </a>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>About Daily Affirmations</h2>
+                <p>Start your day with positive energy. Receive daily affirmations to boost your mood, build confidence, and cultivate a positive mindset.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Features</h2>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Daily new affirmations</li>
+                    <li><i class="fas fa-check"></i> Custom affirmation creation</li>
+                    <li><i class="fas fa-check"></i> Reminder notifications</li>
+                    <li><i class="fas fa-check"></i> Favorite affirmations</li>
+                    <li><i class="fas fa-check"></i> Mood tracking</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Download</h2>
+                <p>ZaZa Daily Affirmations is available on Google Play Store.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.zaza.dailyaffirmations" class="store-btn large" target="_blank">
+                    <i class="fab fa-google-play"></i>
+                    <span>Download on Google Play</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 ZaZa The Vibe. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
