@@ -255,3 +255,21 @@ body {
     padding-right: 0 !important;
   }
 }
+
+#ztv-global-nav {
+  max-height: 96px;
+  padding: 10px 20px;
+}
+#ztv-global-nav img {
+  height: 56px;
+  width: auto;
+}
+.ztv-nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ztv-links a {
+  margin-right: 12px;
+  font-size: 14px;
+}
