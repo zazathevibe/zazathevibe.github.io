@@ -273,3 +273,22 @@ body {
   margin-right: 12px;
   font-size: 14px;
 }
+#ztv-global-nav {
+  height: 72px;
+  background: linear-gradient(90deg,#2a004f,#4b006e);
+}
+
+#ztv-global-nav img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.ztv-nav-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
