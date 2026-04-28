@@ -18,8 +18,13 @@
   <meta name="twitter:description" content="Independent Android apps for reflection, learning, and calm.">
   <meta name="twitter:image" content="https://zazathevibe.github.io/_ASSETS/banner.png">
   <meta name="theme-color" content="#2b0a5e">
-  <link rel="preload" href="/shared-styles.css?v=ztv-rev5" as="style">
-  <link rel="stylesheet" href="/shared-styles.css?v=ztv-rev5">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://formsubmit.co">
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="preload" href="/shared-styles.css?v=ztv-rev6" as="style">
+  <link rel="stylesheet" href="/shared-styles.css?v=ztv-rev6">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,7 +40,15 @@
     ]
   }
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4990119339246817" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener("load", function () {
+      var s = document.createElement("script");
+      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4990119339246817";
+      s.async = true;
+      s.crossOrigin = "anonymous";
+      document.head.appendChild(s);
+    });
+  </script>
 </head>
 <body>
 
@@ -69,6 +82,7 @@
               alt="ZaZa The Vibe — neon night scene and brand illustration"
               loading="eager"
               decoding="async"
+              fetchpriority="high"
             />
           </div>
           <figcaption class="ztv-hero-caption">Brand art above—scroll for apps and the tester form.</figcaption>
@@ -78,7 +92,7 @@
 
     <section id="apps" class="ztv-section-head">
       <h2>The lineup</h2>
-      <p><strong class="highlight">ZaZa The Vibe Tarot</strong> is on public Google Play. The other builds are enrolled through <strong class="highlight">Google Play testing invites only</strong> — tap in for icons, wording, and the tester path (free).</p>
+      <p><strong class="highlight">ZaZa The Vibe Tarot</strong> is on public Google Play. The other tiles are builds <strong class="highlight">still in testing</strong> — open one for details, requirements, and the tester sign-up link (free).</p>
     </section>
 
     <div class="ztv-page-container" style="padding-top: 0;">
@@ -87,7 +101,7 @@
           <div class="ztv-app-icon" aria-hidden="true">✨</div>
           <h3>ZaZa Daily Affirmations</h3>
           <p>Gentle, repeatable affirmations—small daily reps for mindset and steadiness.</p>
-          <span class="ztv-micro">Icon + tester instructions →</span>
+          <span class="ztv-micro">IN TESTING →</span>
         </a>
         <a class="ztv-app-tile ztv-app-tile--public" href="/zaza-the-vibe-tarot/">
           <div class="ztv-app-icon" aria-hidden="true">🃏</div>
@@ -99,70 +113,72 @@
           <div class="ztv-app-icon" aria-hidden="true">🌙</div>
           <h3>ZTV Dream Decoder</h3>
           <p>Jot dreams, surface symbols and numbers, explore patterns without judgment.</p>
-          <span class="ztv-micro">Icon + tester instructions →</span>
+          <span class="ztv-micro">IN TESTING →</span>
         </a>
         <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-impulse/">
           <div class="ztv-app-icon" aria-hidden="true">🫧</div>
           <h3>ZTV Impulse</h3>
           <p>Create space between urge and action—guided breathing and grounding prompts.</p>
-          <span class="ztv-micro">Icon + tester instructions →</span>
+          <span class="ztv-micro">IN TESTING →</span>
         </a>
         <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-memory-recall/">
           <div class="ztv-app-icon" aria-hidden="true">🧠</div>
           <h3>ZTV Memory Recall</h3>
           <p>Short drills for working memory and sequence recall—steady practice, clearer focus.</p>
-          <span class="ztv-micro">Icon + tester instructions →</span>
+          <span class="ztv-micro">IN TESTING →</span>
         </a>
         <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-wordseek/">
           <div class="ztv-app-icon" aria-hidden="true">📚</div>
           <h3>ZTV WordSeek</h3>
           <p>Expand vocabulary through context clues and repetition—not flashcard spam.</p>
-          <span class="ztv-micro">Icon + tester instructions →</span>
+          <span class="ztv-micro">IN TESTING →</span>
         </a>
       </div>
     </div>
 
     <section id="testers" aria-labelledby="testers-title" class="ztv-section-head">
       <h2 id="testers-title">Become a tester</h2>
-      <p>Open testing runs <strong class="highlight">through Google Play only</strong> — when you’re added, Play emails the invite. It’s free. We only need your <strong>Gmail/Google account email</strong> below (that’s where the invite arrives) and which title you’re volunteering for.</p>
-      <p><strong>Reviewer commitment:</strong> after you install from the invite, we need you to <strong class="highlight">open the app at least once every day for 14 days straight</strong> so installs, crashes, sessions, and basic telemetry form a coherent log—we can explain what broke, what lagged, and what to fix next.</p>
+      <p>Submissions go to <strong class="highlight">zazathevibetarot@gmail.com</strong> through the form below (FormSubmit). Add the <strong>Google account email</strong> that’s on your phone and pick <strong>one app</strong> or <strong>all testing-track apps</strong>. There is no automatic “one-click” enroll from a static website — after we read your request, we add that account in <strong>Google Play Console</strong>; then <strong>Google Play emails the official tester invite</strong> you tap to install.</p>
+      <p><strong>Reviewer commitment:</strong> after install, <strong class="highlight">open every app you’re enrolled for at least once per day for 14 days straight</strong> so sessions, crashes, and telemetry line up for a clear report.</p>
     </section>
 
     <div class="ztv-page-container" style="padding-top: 0;">
       <article class="ztv-tester-panel">
         <p class="ztv-tester-lead"><strong class="highlight">Exact requirements per app</strong> — minimum Android version and tester expectations — live on each app’s page. Check there before signing up.</p>
         <form
+          id="tester-form"
           class="ztv-form-grid"
           action="https://formsubmit.co/zazathevibetarot@gmail.com"
           method="POST"
         >
-          <input type="hidden" name="_subject" value="ZaZa The Vibe — tester email (minimal)">
+          <input type="hidden" name="_subject" id="tester-subject" value="[ZTV] Tester request">
           <input type="hidden" name="_next" value="https://zazathevibe.github.io/?thanks=tester">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_gotcha" class="ztv-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="ztv-field">
-            <label class="ztv-label" for="tester-email">Google account email (for Play invite)<span class="ztv-required" aria-hidden="true"> *</span></label>
-            <input id="tester-email" name="email" type="email" required autocomplete="email" placeholder="The Google account email on your phone">
+            <label class="ztv-label" for="tester-email">Google account email (Play invite destination)<span class="ztv-required" aria-hidden="true"> *</span></label>
+            <input id="tester-email" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Google account on your Android device">
           </div>
           <div class="ztv-field">
-            <label class="ztv-label" for="tester-app">Which app?<span class="ztv-required" aria-hidden="true"> *</span></label>
+            <label class="ztv-label" for="tester-app">Choose one app or all testing apps<span class="ztv-required" aria-hidden="true"> *</span></label>
             <select id="tester-app" name="primary_app" required>
-              <option value="" disabled selected>Select one</option>
-              <option value="ZaZa Daily Affirmations">ZaZa Daily Affirmations</option>
-              <option value="ZTV Dream Decoder">ZTV Dream Decoder</option>
-              <option value="ZTV Impulse">ZTV Impulse</option>
-              <option value="ZTV Memory Recall">ZTV Memory Recall</option>
-              <option value="ZTV WordSeek">ZTV WordSeek</option>
+              <option value="" disabled selected>Select scope</option>
+              <option value="ALL_TESTING_APPS">All testing-track apps (5 titles, excludes public Tarot)</option>
+              <option value="ZaZa Daily Affirmations">ZaZa Daily Affirmations only</option>
+              <option value="ZTV Dream Decoder">ZTV Dream Decoder only</option>
+              <option value="ZTV Impulse">ZTV Impulse only</option>
+              <option value="ZTV Memory Recall">ZTV Memory Recall only</option>
+              <option value="ZTV WordSeek">ZTV WordSeek only</option>
             </select>
           </div>
           <div class="ztv-field ztv-field--full ztv-consent-row">
             <input id="tester-consent" name="commitment_ack" type="checkbox" value="yes" required>
-            <label for="tester-consent">I can install via <strong>Google Play</strong> when invited and will <strong>open this app daily for 14 days</strong> for logging. I’ve read <a href="/privacy/">privacy</a>; I agree to tester-related emails at the address above.</label>
+            <label for="tester-consent">I understand enrollments are added <strong>manually in Play Console</strong> (no auto-link from this page), and I’ll <strong>open each app I’m approved for at least once daily for 14 days</strong>. I’ve read <a href="/privacy/">privacy</a>; I agree to emails at the address above.</label>
           </div>
           <div class="ztv-field ztv-field--full ztv-form-actions">
             <button type="submit" class="ztv-btn ztv-btn-primary">Send tester request</button>
-            <span class="ztv-form-hint">Submitted through FormSubmit. Check spam folders.</span>
+            <span class="ztv-form-hint">Delivers to zazathevibetarot@gmail.com via FormSubmit.</span>
           </div>
         </form>
       </article>
@@ -206,6 +222,16 @@
           var sel = document.getElementById("tester-app");
           if (!sel) return;
           var decoded = decodeURIComponent(appParam.replace(/\+/g, " "));
+          var d = decoded.trim();
+          var allAliases = ["all", "ALL_TESTING_APPS", "ALL", "every", "everything"];
+          if (allAliases.indexOf(d) !== -1) {
+            for (var a = 0; a < sel.options.length; a++) {
+              if (sel.options[a].value === "ALL_TESTING_APPS") {
+                sel.selectedIndex = a;
+                return;
+              }
+            }
+          }
           for (var i = 0; i < sel.options.length; i++) {
             var o = sel.options[i];
             if (o.disabled) continue;
@@ -214,6 +240,16 @@
               break;
             }
           }
+        }
+        var tf = document.getElementById("tester-form");
+        var tsub = document.getElementById("tester-subject");
+        var tsel = document.getElementById("tester-app");
+        if (tf && tsub && tsel) {
+          tf.addEventListener("submit", function () {
+            var v = tsel.options[tsel.selectedIndex].value;
+            if (v === "ALL_TESTING_APPS") tsub.value = "[ZTV] Tester: ALL 5 testing-track apps";
+            else if (v) tsub.value = "[ZTV] Tester app: " + v;
+          });
         }
         function maybeScrollTests() {
           if (!appParam) return;
