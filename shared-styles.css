@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Syne:wght@600;700;800&display=swap");
 
-/* ZaZa The Vibe — unified shell (GitHub Pages) — v2026-04 */
+/* ZaZa The Vibe — unified shell (GitHub Pages); site launched 2025 */
 :root {
   --bg-deep: #050010;
   --bg-mid: #140528;
@@ -281,6 +281,77 @@ a:hover {
   text-align: center;
 }
 
+/* Split hero: copy + constrained brand art (avoids fullscreen “poster only”) */
+.ztv-hero--split .ztv-hero-layout {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: center;
+}
+
+@media (min-width: 880px) {
+  .ztv-hero--split .ztv-hero-layout {
+    grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
+    text-align: left;
+  }
+  .ztv-hero--split .ztv-hero-badge,
+  .ztv-hero--split .ztv-hero-intro {
+    justify-self: start;
+    align-self: start;
+    text-align: left;
+    margin-inline: 0 auto;
+    width: fit-content;
+  }
+  .ztv-hero--split .ztv-hero-intro {
+    align-self: stretch;
+    max-width: 36rem;
+  }
+  .ztv-hero--split .ztv-hero-intro .ztv-hero-lead {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ztv-hero--split .ztv-hero-cta-row {
+    justify-content: flex-start;
+  }
+}
+
+.ztv-hero-intro {
+  min-width: 0;
+}
+
+.ztv-hero-art {
+  margin: 0 auto;
+  width: 100%;
+  max-width: min(100%, 520px);
+}
+
+.ztv-hero-art-inner {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(
+    155deg,
+    rgba(60, 20, 100, 0.5),
+    rgba(12, 0, 38, 0.85)
+  );
+  aspect-ratio: 16 / 9;
+}
+
+.ztv-hero-art-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+
+.ztv-hero-caption {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: rgba(236, 201, 255, 0.55);
+}
+
 .ztv-hero-badge {
   display: inline-flex;
   align-items: center;
@@ -364,6 +435,17 @@ a:hover {
   border-color: rgba(255, 255, 255, 0.45);
 }
 
+.ztv-btn-accent {
+  background: rgba(255, 255, 255, 0.09);
+  color: #fff !important;
+  border: 1px solid rgba(244, 114, 255, 0.55);
+}
+
+.ztv-btn-accent:hover {
+  background: rgba(244, 114, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 /* —— Section —— */
 .ztv-section-head {
   text-align: center;
@@ -437,6 +519,163 @@ a:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(236, 201, 255, 0.85);
+}
+
+/* Home: Tarot = public Play; others = tester path */
+.ztv-app-tile--public {
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+.ztv-app-tile--public:hover {
+  border-color: rgba(110, 231, 183, 0.55);
+}
+
+.ztv-app-tile--public .ztv-micro {
+  color: rgba(167, 243, 208, 0.95);
+}
+
+.ztv-app-tile--beta {
+  border-color: rgba(251, 191, 36, 0.28);
+}
+
+.ztv-app-tile--beta:hover {
+  border-color: rgba(251, 191, 55, 0.52);
+}
+
+.ztv-app-tile--beta .ztv-micro {
+  color: rgba(254, 229, 154, 0.95);
+}
+
+/* App landing: icon + Play testing callout (non-public builds) */
+.ztv-app-detail-hero {
+  display: grid;
+  gap: 1.35rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .ztv-app-detail-hero {
+    grid-template-columns: minmax(120px, 192px) minmax(0, 1fr);
+  }
+}
+
+.ztv-app-detail-icon-wrap {
+  width: min(100%, 192px);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(155deg, rgba(50, 25, 95, 0.6), rgba(8, 0, 26, 0.95));
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  place-items: center;
+  padding: clamp(8px, 2vw, 14px);
+}
+
+.ztv-app-detail-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.ztv-app-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.82rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin: 0 0 0.65rem;
+  color: rgba(254, 243, 199, 0.95);
+  border: 1px solid rgba(251, 191, 55, 0.45);
+  background: rgba(70, 40, 5, 0.45);
+}
+
+.ztv-app-status-pill.ztv-app-status-pill--public {
+  text-transform: none;
+  letter-spacing: 0.03em;
+  font-size: 0.76rem;
+  font-weight: 750;
+  color: rgba(209, 250, 229, 0.98);
+  border-color: rgba(52, 211, 153, 0.5);
+  background: rgba(6, 55, 35, 0.45);
+}
+
+.ztv-production-callout {
+  border-radius: var(--radius-xl);
+  padding: clamp(1.15rem, 3.5vw, 1.6rem);
+  margin: clamp(1.25rem, 3vw, 1.85rem) 0;
+  border: 1px solid rgba(251, 191, 65, 0.42);
+  background: linear-gradient(
+    148deg,
+    rgba(85, 50, 8, 0.55),
+    rgba(28, 8, 40, 0.92)
+  );
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.ztv-production-callout__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.08rem, 2.8vw, 1.35rem);
+  margin: 0 0 0.65rem;
+  color: #fffbeb;
+  line-height: 1.25;
+}
+
+.ztv-production-callout p {
+  margin: 0 0 0.75rem;
+  color: rgba(250, 245, 255, 0.86);
+}
+
+.ztv-production-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.ztv-tester-points {
+  margin: 0.65rem 0 0;
+  padding-left: 1.15rem;
+  color: rgba(237, 233, 254, 0.9);
+  line-height: 1.55;
+}
+
+.ztv-tester-points li {
+  margin-bottom: 0.45rem;
+}
+
+.ztv-tester-points strong {
+  color: #fef08a;
+}
+
+.ztv-tester-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 1.1rem 0 0;
+}
+
+.ztv-package-footnote {
+  margin: 1rem 0 0 !important;
+  font-size: 0.82rem !important;
+  color: rgba(236, 201, 255, 0.55) !important;
+}
+
+.ztv-package-footnote code {
+  font-size: 0.9em;
+  color: rgba(233, 213, 255, 0.92);
+}
+
+.ztv-prose-soft {
+  color: rgba(236, 201, 255, 0.78);
+  margin: 0 0 1rem !important;
+  font-size: 0.95rem !important;
 }
 
 /* Philosophy split */
@@ -664,4 +903,130 @@ a:hover {
 
 .site-footer p {
   margin: 0.35rem 0;
+}
+
+/* App tester signup (home + FormSubmit) */
+.ztv-thanks-banner {
+  max-width: var(--max);
+  margin: 0 auto clamp(1rem, 3vw, 1.75rem);
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  background: rgba(6, 40, 30, 0.55);
+  color: rgba(220, 255, 238, 0.95);
+  font-weight: 600;
+}
+
+.ztv-thanks-banner[hidden] {
+  display: none !important;
+}
+
+.ztv-tester-panel {
+  border-radius: var(--radius-xl);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid var(--stroke);
+  background: linear-gradient(
+    155deg,
+    rgba(70, 25, 120, 0.55),
+    rgba(10, 0, 28, 0.94)
+  );
+  box-shadow: var(--shadow-lg);
+}
+
+.ztv-tester-lead {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
+.ztv-form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ztv-form-grid--two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ztv-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.ztv-field--full {
+  grid-column: 1 / -1;
+}
+
+.ztv-field label span {
+  color: rgba(236, 201, 255, 0.88);
+}
+
+.ztv-required {
+  color: rgba(251, 191, 36, 0.95);
+  font-weight: 700;
+}
+
+.ztv-field input,
+.ztv-field select,
+.ztv-field textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+}
+
+.ztv-field textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.ztv-field input:focus-visible,
+.ztv-field select:focus-visible,
+.ztv-field textarea:focus-visible {
+  outline: 2px solid rgba(244, 114, 255, 0.55);
+  outline-offset: 1px;
+}
+
+.ztv-consent-row {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  font-size: 0.93rem;
+  color: var(--muted);
+}
+
+.ztv-consent-row input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.18rem;
+  accent-color: var(--accent);
+}
+
+.ztv-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  padding-top: 0.35rem;
+}
+
+.ztv-form-hint {
+  font-size: 0.82rem;
+  color: rgba(236, 201, 255, 0.45);
+}
+
+.ztv-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }

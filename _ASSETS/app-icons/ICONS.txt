@@ -1,0 +1,9 @@
+Add square PNG icons (recommended 512x512–1024x1024) with these filenames:
+  tarot.png
+  daily-affirmations.png
+  dream-decoder.png
+  impulse.png
+  memory-recall.png
+  wordseek.png
+
+If an icon is missing, the site falls back to ../banner.png automatically.

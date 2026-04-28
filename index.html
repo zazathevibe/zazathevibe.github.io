@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ZaZa The Vibe — Android apps for intuition, calm, and clarity</title>
-  <meta name="description" content="Official hub for ZaZa The Vibe Android apps: affirmations, tarot-style readings, dream journaling, memory training, vocabulary, and mindfulness—built for quick, focused sessions.">
+  <meta name="description" content="Official hub for ZaZa The Vibe Android apps: affirmations, tarot-style readings, dream journaling, memory training, vocabulary, app testing sign-up, and mindfulness—built for quick, focused sessions.">
   <link rel="canonical" href="https://zazathevibe.github.io/">
   <link rel="icon" type="image/png" href="/_ASSETS/banner.png">
   <link rel="apple-touch-icon" href="/_ASSETS/banner.png">
@@ -18,8 +18,8 @@
   <meta name="twitter:description" content="Independent Android apps for reflection, learning, and calm.">
   <meta name="twitter:image" content="https://zazathevibe.github.io/_ASSETS/banner.png">
   <meta name="theme-color" content="#2b0a5e">
-  <link rel="preload" href="/shared-styles.css?v=2026-ztv-rev1" as="style">
-  <link rel="stylesheet" href="/shared-styles.css?v=2026-ztv-rev1">
+  <link rel="preload" href="/shared-styles.css?v=ztv-rev4" as="style">
+  <link rel="stylesheet" href="/shared-styles.css?v=ztv-rev4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,63 +42,151 @@
   <a class="ztv-skip" href="#apps">Skip to apps</a>
 
   <main class="ztv-main">
+    <div id="tester-success-flash" class="ztv-thanks-banner" hidden role="status" aria-live="polite">
+      Thanks—your tester request was sent. Watch your inbox at the email you used.
+    </div>
 
-    <header class="ztv-hero" role="banner">
-      <span class="ztv-hero-badge">Independent · Google Play</span>
-      <h1>ZaZa The Vibe</h1>
-      <p class="ztv-hero-lead">
-        Focused Android experiences for affirmation, intuition, journaling, skill games, and breath—thoughtful rituals without bloat or noise.
-      </p>
-      <div class="ztv-hero-cta-row">
-        <a class="ztv-btn ztv-btn-primary" href="#apps">Explore apps</a>
-        <a class="ztv-btn ztv-btn-ghost" href="/news/">Latest news</a>
+    <header class="ztv-hero ztv-hero--split" role="banner">
+      <div class="ztv-hero-layout">
+        <div class="ztv-hero-intro">
+          <span class="ztv-hero-badge">Independent · Google Play</span>
+          <h1>ZaZa The Vibe</h1>
+          <p class="ztv-hero-lead">
+            Focused Android experiences for affirmation, intuition, journaling, skill games, and breath—thoughtful rituals without bloat or noise.
+          </p>
+          <div class="ztv-hero-cta-row">
+            <a class="ztv-btn ztv-btn-primary" href="#apps">Explore apps</a>
+            <a class="ztv-btn ztv-btn-accent" href="#testers">Beta testing</a>
+            <a class="ztv-btn ztv-btn-ghost" href="/news/">Latest news</a>
+          </div>
+        </div>
+        <figure class="ztv-hero-art">
+          <div class="ztv-hero-art-inner">
+            <img
+              src="/_ASSETS/banner.png"
+              width="1200"
+              height="675"
+              alt="ZaZa The Vibe — neon night scene and brand illustration"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="ztv-hero-caption">Brand art above—scroll for apps and the tester form.</figcaption>
+        </figure>
       </div>
     </header>
 
     <section id="apps" class="ztv-section-head">
       <h2>The lineup</h2>
-      <p>Each page opens the Play listing for that app—these mini-sites explain what we built and why it exists.</p>
+      <p><strong class="highlight">ZaZa The Vibe Tarot</strong> is on public Google Play. The other builds are enrolled through <strong class="highlight">Google Play testing invites only</strong> — tap in for icons, wording, and the tester path (free).</p>
     </section>
 
     <div class="ztv-page-container" style="padding-top: 0;">
       <div class="ztv-app-grid-large">
-        <a class="ztv-app-tile" href="/zaza-daily-affirmations/">
+        <a class="ztv-app-tile ztv-app-tile--beta" href="/zaza-daily-affirmations/">
           <div class="ztv-app-icon" aria-hidden="true">✨</div>
           <h3>ZaZa Daily Affirmations</h3>
           <p>Gentle, repeatable affirmations—small daily reps for mindset and steadiness.</p>
-          <span class="ztv-micro">Landing page →</span>
+          <span class="ztv-micro">Icon + tester instructions →</span>
         </a>
-        <a class="ztv-app-tile" href="/zaza-the-vibe-tarot/">
+        <a class="ztv-app-tile ztv-app-tile--public" href="/zaza-the-vibe-tarot/">
           <div class="ztv-app-icon" aria-hidden="true">🃏</div>
           <h3>ZaZa The Vibe Tarot</h3>
           <p>Card pulls and spreads for reflection—plain-language takes, not doom or fluff.</p>
-          <span class="ztv-micro">Landing page →</span>
+          <span class="ztv-micro">Open on Google Play →</span>
         </a>
-        <a class="ztv-app-tile" href="/ztv-dream-decoder/">
+        <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-dream-decoder/">
           <div class="ztv-app-icon" aria-hidden="true">🌙</div>
           <h3>ZTV Dream Decoder</h3>
           <p>Jot dreams, surface symbols and numbers, explore patterns without judgment.</p>
-          <span class="ztv-micro">Landing page →</span>
+          <span class="ztv-micro">Icon + tester instructions →</span>
         </a>
-        <a class="ztv-app-tile" href="/ztv-impulse/">
+        <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-impulse/">
           <div class="ztv-app-icon" aria-hidden="true">🫧</div>
           <h3>ZTV Impulse</h3>
           <p>Create space between urge and action—guided breathing and grounding prompts.</p>
-          <span class="ztv-micro">Landing page →</span>
+          <span class="ztv-micro">Icon + tester instructions →</span>
         </a>
-        <a class="ztv-app-tile" href="/ztv-memory-recall/">
+        <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-memory-recall/">
           <div class="ztv-app-icon" aria-hidden="true">🧠</div>
           <h3>ZTV Memory Recall</h3>
           <p>Short drills for working memory and sequence recall—steady practice, clearer focus.</p>
-          <span class="ztv-micro">Landing page →</span>
+          <span class="ztv-micro">Icon + tester instructions →</span>
         </a>
-        <a class="ztv-app-tile" href="/ztv-wordseek/">
+        <a class="ztv-app-tile ztv-app-tile--beta" href="/ztv-wordseek/">
           <div class="ztv-app-icon" aria-hidden="true">📚</div>
           <h3>ZTV WordSeek</h3>
           <p>Expand vocabulary through context clues and repetition—not flashcard spam.</p>
-          <span class="ztv-micro">Landing page →</span>
+          <span class="ztv-micro">Icon + tester instructions →</span>
         </a>
       </div>
+    </div>
+
+    <section id="testers" aria-labelledby="testers-title" class="ztv-section-head">
+      <h2 id="testers-title">Become an app tester</h2>
+      <p>Except for <strong>ZaZa The Vibe Tarot</strong> on the public catalog, these apps are on <strong>Google Play testing tracks</strong>—no public store search, always <strong>free</strong>, and <strong>no sideloading</strong>. When you’re approved, <strong>Google Play emails the official invite</strong> with the install link. Leave your details; we coordinate from <strong class="highlight">zazathevibetarot@gmail.com</strong>.</p>
+    </section>
+
+    <div class="ztv-page-container" style="padding-top: 0;">
+      <article class="ztv-tester-panel">
+        <p class="ztv-tester-lead">All responses help choose the right testers. Submissions route to our inbox via FormSubmit—no account on this website.</p>
+        <form
+          class="ztv-form-grid ztv-form-grid--two"
+          action="https://formsubmit.co/zazathevibetarot@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="ZaZa The Vibe — app tester request">
+          <input type="hidden" name="_next" value="https://zazathevibe.github.io/?thanks=tester">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_gotcha" class="ztv-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="ztv-field">
+            <label class="ztv-label" for="tester-name">Name or handle <span class="ztv-required" aria-hidden="true">*</span></label>
+            <input id="tester-name" name="name" type="text" required autocomplete="name" placeholder="What we should call you">
+          </div>
+          <div class="ztv-field">
+            <label class="ztv-label" for="tester-email">Email <span class="ztv-required" aria-hidden="true">*</span></label>
+            <input id="tester-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="ztv-field ztv-field--full">
+            <label class="ztv-label" for="tester-app">Which app are you most interested in testing?</label>
+            <select id="tester-app" name="primary_app" required>
+              <option value="" disabled selected>Choose one</option>
+              <option value="ZaZa Daily Affirmations">ZaZa Daily Affirmations</option>
+              <option value="ZaZa The Vibe Tarot">ZaZa The Vibe Tarot</option>
+              <option value="ZTV Dream Decoder">ZTV Dream Decoder</option>
+              <option value="ZTV Impulse">ZTV Impulse</option>
+              <option value="ZTV Memory Recall">ZTV Memory Recall</option>
+              <option value="ZTV WordSeek">ZTV WordSeek</option>
+              <option value="Any / surprise me">Surprise me / any</option>
+            </select>
+          </div>
+          <div class="ztv-field">
+            <label class="ztv-label" for="tester-device">Android device (optional)</label>
+            <input id="tester-device" name="device" type="text" autocomplete="off" placeholder="e.g. Pixel 8, Galaxy S24">
+          </div>
+          <div class="ztv-field">
+            <label class="ztv-label" for="tester-os">Android version (optional)</label>
+            <input id="tester-os" name="android_version" type="text" autocomplete="off" placeholder="e.g. Android 15">
+          </div>
+          <div class="ztv-field ztv-field--full">
+            <label class="ztv-label" for="tester-notes">Discord / Telegram / other (optional)</label>
+            <input id="tester-notes" name="contact_extra" type="text" autocomplete="off" placeholder="If you want a faster ping outside email">
+          </div>
+          <div class="ztv-field ztv-field--full">
+            <label class="ztv-label" for="tester-experience">Experience with beta apps (optional)</label>
+            <textarea id="tester-experience" name="experience" placeholder="Have you used Google Play internal or open testing before? Any accessibility needs we should know?"></textarea>
+          </div>
+          <div class="ztv-field ztv-field--full ztv-consent-row">
+            <input id="tester-consent" name="consent" type="checkbox" value="yes" required>
+            <label for="tester-consent">I agree to receive tester-related email from ZaZa The Vibe and understand how data is handled in the <a href="/privacy/">privacy policy</a>.</label>
+          </div>
+          <div class="ztv-field ztv-field--full ztv-form-actions">
+            <button type="submit" class="ztv-btn ztv-btn-primary">Request tester access</button>
+            <span class="ztv-form-hint">Delivered by FormSubmit—check spam if you don’t see a reply within a few days.</span>
+          </div>
+        </form>
+      </article>
     </div>
 
     <div class="ztv-split">
@@ -117,10 +205,51 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 ZaZa The Vibe · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/news/">News</a></p>
+    <p>© 2025–2026 ZaZa The Vibe · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/news/">News</a></p>
     <p>Independent Android tools · Official developer hub.</p>
   </footer>
 
+  <script>
+    (function () {
+      try {
+        var thanks = new URLSearchParams(location.search).get("thanks");
+        var appParam = new URLSearchParams(location.search).get("app");
+        if (thanks === "tester") {
+          var flash = document.getElementById("tester-success-flash");
+          if (flash) flash.removeAttribute("hidden");
+          var testers = document.getElementById("testers");
+          if (testers) testers.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (history.replaceState) history.replaceState(null, "", "/");
+          return;
+        }
+        function prefillAppChoice() {
+          if (!appParam) return;
+          var sel = document.getElementById("tester-app");
+          if (!sel) return;
+          var decoded = decodeURIComponent(appParam.replace(/\+/g, " "));
+          for (var i = 0; i < sel.options.length; i++) {
+            var o = sel.options[i];
+            if (o.disabled) continue;
+            if (o.value === decoded || o.textContent.trim() === decoded || o.textContent.trim() === appParam) {
+              sel.selectedIndex = i;
+              break;
+            }
+          }
+        }
+        function maybeScrollTests() {
+          if (!appParam) return;
+          if (location.hash && location.hash.toLowerCase() === "#testers") {
+            requestAnimationFrame(function () {
+              var t = document.getElementById("testers");
+              if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+          }
+        }
+        prefillAppChoice();
+        maybeScrollTests();
+      } catch (e) {}
+    })();
+  </script>
   <script src="/_shared_nav.js" defer></script>
 </body>
 </html>

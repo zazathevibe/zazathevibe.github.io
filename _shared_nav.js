@@ -3,12 +3,23 @@
 
   var path = (location.pathname || "/").replace(/\/+$/, "") || "/";
   function current(href) {
-    if (href === "/") return path === "/" || path === "/index.html";
+    if (href === "/#testers") {
+      return (
+        (path === "/" || path === "/index.html") &&
+        (location.hash || "").toLowerCase() === "#testers"
+      );
+    }
+    if (href === "/") {
+      if (!(path === "/" || path === "/index.html")) return false;
+      if ((location.hash || "").toLowerCase() === "#testers") return false;
+      return true;
+    }
     return path === href || path.indexOf(href.replace(/\/$/, "")) === 0;
   }
 
   var links = [
     { href: "/", label: "Home" },
+    { href: "/#testers", label: "Testers" },
     { href: "/news/", label: "News" },
     { href: "/privacy/", label: "Privacy" },
     { href: "/terms/", label: "Terms" },
