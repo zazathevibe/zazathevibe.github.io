@@ -1,4 +1,26 @@
 (function () {
+  try {
+    var href = "/_ASSETS/banner.png";
+    if (
+      document.head &&
+      !document.querySelector(
+        'link[data-ztv-icon="banner"],link[rel~="icon"][href*="banner.png"],link[rel="apple-touch-icon"][href*="banner.png"]'
+      )
+    ) {
+      var fb = document.createElement("link");
+      fb.rel = "icon";
+      fb.type = "image/png";
+      fb.href = href;
+      fb.setAttribute("data-ztv-icon", "banner");
+      document.head.insertBefore(fb, document.head.firstChild);
+      var apt = document.createElement("link");
+      apt.rel = "apple-touch-icon";
+      apt.href = href;
+      apt.setAttribute("data-ztv-icon", "banner");
+      document.head.insertBefore(apt, fb.nextSibling);
+    }
+  } catch (eIcon) {}
+
   if (document.getElementById("ztv-shared-nav")) return;
 
   var path = (location.pathname || "/").replace(/\/+$/, "") || "/";
