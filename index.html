@@ -18,8 +18,8 @@
   <meta name="twitter:description" content="Independent Android apps for reflection, learning, and calm.">
   <meta name="twitter:image" content="https://zazathevibe.github.io/_ASSETS/banner.png">
   <meta name="theme-color" content="#2b0a5e">
-  <link rel="preload" href="/shared-styles.css?v=ztv-rev4" as="style">
-  <link rel="stylesheet" href="/shared-styles.css?v=ztv-rev4">
+  <link rel="preload" href="/shared-styles.css?v=ztv-rev5" as="style">
+  <link rel="stylesheet" href="/shared-styles.css?v=ztv-rev5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,7 +43,7 @@
 
   <main class="ztv-main">
     <div id="tester-success-flash" class="ztv-thanks-banner" hidden role="status" aria-live="polite">
-      Thanks—your tester request was sent. Watch your inbox at the email you used.
+      Thanks — you're on the list. Watch the Gmail you submitted for Google's Play-testing invite.
     </div>
 
     <header class="ztv-hero ztv-hero--split" role="banner">
@@ -123,67 +123,46 @@
     </div>
 
     <section id="testers" aria-labelledby="testers-title" class="ztv-section-head">
-      <h2 id="testers-title">Become an app tester</h2>
-      <p>Except for <strong>ZaZa The Vibe Tarot</strong> on the public catalog, these apps are on <strong>Google Play testing tracks</strong>—no public store search, always <strong>free</strong>, and <strong>no sideloading</strong>. When you’re approved, <strong>Google Play emails the official invite</strong> with the install link. Leave your details; we coordinate from <strong class="highlight">zazathevibetarot@gmail.com</strong>.</p>
+      <h2 id="testers-title">Become a tester</h2>
+      <p>Open testing runs <strong class="highlight">through Google Play only</strong> — when you’re added, Play emails the invite. It’s free. We only need your <strong>Gmail/Google account email</strong> below (that’s where the invite arrives) and which title you’re volunteering for.</p>
+      <p><strong>Reviewer commitment:</strong> after you install from the invite, we need you to <strong class="highlight">open the app at least once every day for 14 days straight</strong> so installs, crashes, sessions, and basic telemetry form a coherent log—we can explain what broke, what lagged, and what to fix next.</p>
     </section>
 
     <div class="ztv-page-container" style="padding-top: 0;">
       <article class="ztv-tester-panel">
-        <p class="ztv-tester-lead">All responses help choose the right testers. Submissions route to our inbox via FormSubmit—no account on this website.</p>
+        <p class="ztv-tester-lead"><strong class="highlight">Exact requirements per app</strong> — minimum Android version and tester expectations — live on each app’s page. Check there before signing up.</p>
         <form
-          class="ztv-form-grid ztv-form-grid--two"
+          class="ztv-form-grid"
           action="https://formsubmit.co/zazathevibetarot@gmail.com"
           method="POST"
         >
-          <input type="hidden" name="_subject" value="ZaZa The Vibe — app tester request">
+          <input type="hidden" name="_subject" value="ZaZa The Vibe — tester email (minimal)">
           <input type="hidden" name="_next" value="https://zazathevibe.github.io/?thanks=tester">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_gotcha" class="ztv-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="ztv-field">
-            <label class="ztv-label" for="tester-name">Name or handle <span class="ztv-required" aria-hidden="true">*</span></label>
-            <input id="tester-name" name="name" type="text" required autocomplete="name" placeholder="What we should call you">
+            <label class="ztv-label" for="tester-email">Google account email (for Play invite)<span class="ztv-required" aria-hidden="true"> *</span></label>
+            <input id="tester-email" name="email" type="email" required autocomplete="email" placeholder="The Google account email on your phone">
           </div>
           <div class="ztv-field">
-            <label class="ztv-label" for="tester-email">Email <span class="ztv-required" aria-hidden="true">*</span></label>
-            <input id="tester-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-          </div>
-          <div class="ztv-field ztv-field--full">
-            <label class="ztv-label" for="tester-app">Which app are you most interested in testing?</label>
+            <label class="ztv-label" for="tester-app">Which app?<span class="ztv-required" aria-hidden="true"> *</span></label>
             <select id="tester-app" name="primary_app" required>
-              <option value="" disabled selected>Choose one</option>
+              <option value="" disabled selected>Select one</option>
               <option value="ZaZa Daily Affirmations">ZaZa Daily Affirmations</option>
-              <option value="ZaZa The Vibe Tarot">ZaZa The Vibe Tarot</option>
               <option value="ZTV Dream Decoder">ZTV Dream Decoder</option>
               <option value="ZTV Impulse">ZTV Impulse</option>
               <option value="ZTV Memory Recall">ZTV Memory Recall</option>
               <option value="ZTV WordSeek">ZTV WordSeek</option>
-              <option value="Any / surprise me">Surprise me / any</option>
             </select>
           </div>
-          <div class="ztv-field">
-            <label class="ztv-label" for="tester-device">Android device (optional)</label>
-            <input id="tester-device" name="device" type="text" autocomplete="off" placeholder="e.g. Pixel 8, Galaxy S24">
-          </div>
-          <div class="ztv-field">
-            <label class="ztv-label" for="tester-os">Android version (optional)</label>
-            <input id="tester-os" name="android_version" type="text" autocomplete="off" placeholder="e.g. Android 15">
-          </div>
-          <div class="ztv-field ztv-field--full">
-            <label class="ztv-label" for="tester-notes">Discord / Telegram / other (optional)</label>
-            <input id="tester-notes" name="contact_extra" type="text" autocomplete="off" placeholder="If you want a faster ping outside email">
-          </div>
-          <div class="ztv-field ztv-field--full">
-            <label class="ztv-label" for="tester-experience">Experience with beta apps (optional)</label>
-            <textarea id="tester-experience" name="experience" placeholder="Have you used Google Play internal or open testing before? Any accessibility needs we should know?"></textarea>
-          </div>
           <div class="ztv-field ztv-field--full ztv-consent-row">
-            <input id="tester-consent" name="consent" type="checkbox" value="yes" required>
-            <label for="tester-consent">I agree to receive tester-related email from ZaZa The Vibe and understand how data is handled in the <a href="/privacy/">privacy policy</a>.</label>
+            <input id="tester-consent" name="commitment_ack" type="checkbox" value="yes" required>
+            <label for="tester-consent">I can install via <strong>Google Play</strong> when invited and will <strong>open this app daily for 14 days</strong> for logging. I’ve read <a href="/privacy/">privacy</a>; I agree to tester-related emails at the address above.</label>
           </div>
           <div class="ztv-field ztv-field--full ztv-form-actions">
-            <button type="submit" class="ztv-btn ztv-btn-primary">Request tester access</button>
-            <span class="ztv-form-hint">Delivered by FormSubmit—check spam if you don’t see a reply within a few days.</span>
+            <button type="submit" class="ztv-btn ztv-btn-primary">Send tester request</button>
+            <span class="ztv-form-hint">Submitted through FormSubmit. Check spam folders.</span>
           </div>
         </form>
       </article>

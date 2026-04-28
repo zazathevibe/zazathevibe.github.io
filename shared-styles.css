@@ -678,6 +678,39 @@ a:hover {
   font-size: 0.95rem !important;
 }
 
+/* Per-app Android floor + QA window */
+.ztv-android-callout {
+  margin: clamp(1rem, 3vw, 1.5rem) 0 clamp(1.25rem, 3vw, 1.85rem);
+  padding: 1.05rem clamp(14px, 3vw, 1.35rem);
+  border-radius: 18px;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(15, 5, 40, 0.65);
+}
+
+.ztv-android-callout h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.02rem, 2.8vw, 1.2rem);
+  font-weight: 800;
+  margin: 0 0 0.55rem;
+  color: #fff;
+}
+
+.ztv-android-callout p {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.94rem !important;
+  line-height: 1.55;
+}
+
+.ztv-android-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.ztv-note-muted {
+  opacity: 0.85;
+  font-style: italic;
+}
+
 /* Philosophy split */
 .ztv-split {
   max-width: var(--max);
