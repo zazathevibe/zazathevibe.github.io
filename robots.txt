@@ -1,5 +1,5 @@
+# ZaZa The Vibe — allow crawling; sitemap at HTTPS root (no redirects).
 User-agent: *
 Allow: /
+
 Sitemap: https://zazathevibe.github.io/sitemap.xml
-
-

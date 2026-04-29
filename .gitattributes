@@ -1,0 +1,3 @@
+# Normalize text files for GitHub Pages (avoids CRLF surprises in XML/plain).
+*.xml text eol=lf
+robots.txt text eol=lf
