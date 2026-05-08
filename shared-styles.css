@@ -521,7 +521,7 @@ a:hover {
   color: rgba(236, 201, 255, 0.85);
 }
 
-/* Home: Tarot = public Play; others = tester path */
+/* Home: large tiles linking out to Google Play */
 .ztv-app-tile--public {
   border-color: rgba(52, 211, 153, 0.35);
 }
@@ -534,19 +534,61 @@ a:hover {
   color: rgba(167, 243, 208, 0.95);
 }
 
-.ztv-app-tile--beta {
-  border-color: rgba(251, 191, 36, 0.28);
+/* Home: full Play URLs (tap or copy) */
+.ztv-play-url-panel {
+  max-width: var(--max);
+  margin: 0 auto clamp(1.25rem, 3vw, 2rem);
+  padding: clamp(1rem, 3vw, 1.35rem) clamp(14px, 3vw, 1.25rem);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(12, 4, 36, 0.72);
+  box-shadow: var(--shadow-lg);
 }
 
-.ztv-app-tile--beta:hover {
-  border-color: rgba(251, 191, 55, 0.52);
+.ztv-play-url-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(0.85rem, 2vw, 1.1rem);
 }
 
-.ztv-app-tile--beta .ztv-micro {
-  color: rgba(254, 229, 154, 0.95);
+.ztv-play-url-list li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: clamp(0.75rem, 2vw, 0.95rem);
 }
 
-/* App landing: icon + Play testing callout (non-public builds) */
+.ztv-play-url-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ztv-play-url-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.ztv-play-url-list a {
+  display: inline-block;
+  word-break: break-all;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: rgba(167, 243, 208, 0.98);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ztv-play-url-list a:hover {
+  color: #fff;
+}
+
+/* App landing hero row */
 .ztv-app-detail-hero {
   display: grid;
   gap: 1.35rem;
@@ -607,60 +649,6 @@ a:hover {
   background: rgba(6, 55, 35, 0.45);
 }
 
-.ztv-production-callout {
-  border-radius: var(--radius-xl);
-  padding: clamp(1.15rem, 3.5vw, 1.6rem);
-  margin: clamp(1.25rem, 3vw, 1.85rem) 0;
-  border: 1px solid rgba(251, 191, 65, 0.42);
-  background: linear-gradient(
-    148deg,
-    rgba(85, 50, 8, 0.55),
-    rgba(28, 8, 40, 0.92)
-  );
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
-}
-
-.ztv-production-callout__title {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(1.08rem, 2.8vw, 1.35rem);
-  margin: 0 0 0.65rem;
-  color: #fffbeb;
-  line-height: 1.25;
-}
-
-.ztv-production-callout p {
-  margin: 0 0 0.75rem;
-  color: rgba(250, 245, 255, 0.86);
-}
-
-.ztv-production-callout p:last-child {
-  margin-bottom: 0;
-}
-
-.ztv-tester-points {
-  margin: 0.65rem 0 0;
-  padding-left: 1.15rem;
-  color: rgba(237, 233, 254, 0.9);
-  line-height: 1.55;
-}
-
-.ztv-tester-points li {
-  margin-bottom: 0.45rem;
-}
-
-.ztv-tester-points strong {
-  color: #fef08a;
-}
-
-.ztv-tester-cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  align-items: center;
-  margin: 1.1rem 0 0;
-}
-
 .ztv-package-footnote {
   margin: 1rem 0 0 !important;
   font-size: 0.82rem !important;
@@ -678,7 +666,7 @@ a:hover {
   font-size: 0.95rem !important;
 }
 
-/* Per-app Android floor + QA window */
+/* Per-app device note */
 .ztv-android-callout {
   margin: clamp(1rem, 3vw, 1.5rem) 0 clamp(1.25rem, 3vw, 1.85rem);
   padding: 1.05rem clamp(14px, 3vw, 1.35rem);
@@ -938,7 +926,7 @@ a:hover {
   margin: 0.35rem 0;
 }
 
-/* App tester signup (home + FormSubmit) */
+/* Success banner (legacy; unused on live home) */
 .ztv-thanks-banner {
   max-width: var(--max);
   margin: 0 auto clamp(1rem, 3vw, 1.75rem);
@@ -952,23 +940,6 @@ a:hover {
 
 .ztv-thanks-banner[hidden] {
   display: none !important;
-}
-
-.ztv-tester-panel {
-  border-radius: var(--radius-xl);
-  padding: clamp(1.5rem, 4vw, 2.25rem);
-  border: 1px solid var(--stroke);
-  background: linear-gradient(
-    155deg,
-    rgba(70, 25, 120, 0.55),
-    rgba(10, 0, 28, 0.94)
-  );
-  box-shadow: var(--shadow-lg);
-}
-
-.ztv-tester-lead {
-  margin: 0 0 1.25rem;
-  color: var(--muted);
 }
 
 .ztv-form-grid {

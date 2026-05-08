@@ -1,85 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ZaZa The Vibe - Verification Test</title>
-    <link rel="icon" type="image/png" href="/_ASSETS/banner.png">
-    <link rel="apple-touch-icon" href="/_ASSETS/banner.png">
-    <link rel="stylesheet" href="./shared-styles.css">
-    <style>
-        .test-results {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.1);
-        }
-        .test-item {
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .pass { background: rgba(0, 255, 0, 0.2); border-left: 5px solid green; }
-        .fail { background: rgba(255, 0, 0, 0.2); border-left: 5px solid red; }
-        .status {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-right: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        .pass .status { background: green; color: white; }
-        .fail .status { background: red; color: white; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZaZa The Vibe — Site layout check</title>
+  <link rel="icon" type="image/png" href="/_ASSETS/banner.png">
+  <link rel="apple-touch-icon" href="/_ASSETS/banner.png">
+  <link rel="stylesheet" href="/shared-styles.css?v=ztv-rev9">
+  <style>
+    .layout-check-panel {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .layout-check-row {
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .ok { background: rgba(0, 255, 0, 0.2); border-left: 5px solid green; }
+    .neutral { background: rgba(255, 255, 255, 0.06); border-left: 5px solid rgba(255, 255, 255, 0.35); }
+    .layout-check-badge {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .ok .layout-check-badge { background: green; color: white; }
+    .neutral .layout-check-badge { background: rgba(255, 255, 255, 0.2); color: #fff; }
+  </style>
 </head>
 <body>
-    <div class="page-container">
-        <div class="test-results">
-            <h1>ZaZa The Vibe - Site Verification</h1>
-            <p>Testing if CSS and pages are working correctly...</p>
-            
-            <div class="test-item pass">
-                <div class="status">✓</div>
-                <div>
-                    <strong>CSS Loaded:</strong> If this page has dark purple background, CSS is working!
-                </div>
-            </div>
-            
-            <div class="test-item">
-                <div class="status">?</div>
-                <div>
-                    <strong>Test Links:</strong> Check these pages:
-                    <ul>
-                        <li><a href="/news/" target="_blank">News Page</a></li>
-                        <li><a href="/privacy/" target="_blank">Privacy Page</a></li>
-                        <li><a href="/terms/" target="_blank">Terms Page</a></li>
-                        <li><a href="/" target="_blank">Main Page</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div style="margin-top: 30px; padding: 20px; background: rgba(245, 139, 255, 0.1); border-radius: 10px;">
-                <h3>Expected Results:</h3>
-                <ul>
-                    <li>✅ Dark purple background on all pages</li>
-                    <li>✅ Proper header with logo and navigation</li>
-                    <li>✅ Working navigation links (Home, News, Privacy, Terms)</li>
-                    <li>✅ Consistent purple gradient card design</li>
-                    <li>✅ "Back to All Apps" button on support pages</li>
-                </ul>
-            </div>
+  <div class="page-container">
+    <div class="layout-check-panel">
+      <h1>ZaZa The Vibe — quick layout check</h1>
+      <p>If this page shows the usual dark purple styling, shared CSS is loading.</p>
+
+      <div class="layout-check-row ok">
+        <div class="layout-check-badge">✓</div>
+        <div>
+          <strong>Stylesheet:</strong> Background and typography should match the rest of the hub.
         </div>
+      </div>
+
+      <div class="layout-check-row neutral">
+        <div class="layout-check-badge">→</div>
+        <div>
+          <strong>Handy links:</strong>
+          <ul>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-<script src="/_shared_nav.js"></script></body>
+  </div>
+  <script src="/_shared_nav.js" defer></script>
+</body>
 </html>
-
-
-
-
-
