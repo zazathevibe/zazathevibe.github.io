@@ -534,60 +534,6 @@ a:hover {
   color: rgba(167, 243, 208, 0.95);
 }
 
-/* Home: full Play URLs (tap or copy) */
-.ztv-play-url-panel {
-  max-width: var(--max);
-  margin: 0 auto clamp(1.25rem, 3vw, 2rem);
-  padding: clamp(1rem, 3vw, 1.35rem) clamp(14px, 3vw, 1.25rem);
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(139, 92, 246, 0.35);
-  background: rgba(12, 4, 36, 0.72);
-  box-shadow: var(--shadow-lg);
-}
-
-.ztv-play-url-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: clamp(0.85rem, 2vw, 1.1rem);
-}
-
-.ztv-play-url-list li {
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-bottom: clamp(0.75rem, 2vw, 0.95rem);
-}
-
-.ztv-play-url-list li:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.ztv-play-url-name {
-  display: block;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: 0.35rem;
-}
-
-.ztv-play-url-list a {
-  display: inline-block;
-  word-break: break-all;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  color: rgba(167, 243, 208, 0.98);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.ztv-play-url-list a:hover {
-  color: #fff;
-}
-
 /* App landing hero row */
 .ztv-app-detail-hero {
   display: grid;

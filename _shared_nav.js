@@ -25,15 +25,15 @@
 
   var path = (location.pathname || "/").replace(/\/+$/, "") || "/";
   function current(href) {
-    if (href === "/#testers") {
+    if (href === "/#apps") {
       return (
         (path === "/" || path === "/index.html") &&
-        (location.hash || "").toLowerCase() === "#testers"
+        (location.hash || "").toLowerCase() === "#apps"
       );
     }
     if (href === "/") {
       if (!(path === "/" || path === "/index.html")) return false;
-      if ((location.hash || "").toLowerCase() === "#testers") return false;
+      if ((location.hash || "").toLowerCase() === "#apps") return false;
       return true;
     }
     return path === href || path.indexOf(href.replace(/\/$/, "")) === 0;
@@ -41,7 +41,7 @@
 
   var links = [
     { href: "/", label: "Home" },
-    { href: "/#testers", label: "Testers" },
+    { href: "/#apps", label: "Apps" },
     { href: "/news/", label: "News" },
     { href: "/privacy/", label: "Privacy" },
     { href: "/terms/", label: "Terms" },
