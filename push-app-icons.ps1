@@ -12,6 +12,7 @@ $IconDir = Join-Path $RepoRoot "_ASSETS\app-icons"
 $needed = @(
   "daily-affirmations.png",
   "dream-decoder.png",
+  "habiqube.png",
   "impulse.png",
   "memory-recall.png",
   "tarot.png",
