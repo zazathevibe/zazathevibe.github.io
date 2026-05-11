@@ -394,6 +394,90 @@ a:hover {
   align-items: center;
 }
 
+/* Official Google Play badge — preserve aspect ratio per Play branding guidelines */
+.ztv-play-badge-wrap {
+  margin-top: 1.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 880px) {
+  .ztv-hero--split .ztv-play-badge-wrap {
+    justify-content: flex-start;
+  }
+}
+
+.ztv-play-badge-link {
+  display: inline-block;
+  line-height: 0;
+  border-radius: 14px;
+  transition:
+    transform 0.16s ease,
+    filter 0.16s ease;
+}
+
+.ztv-play-badge-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.ztv-play-badge-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.ztv-play-badge-img {
+  height: clamp(48px, 12vw, 63px);
+  width: auto;
+  vertical-align: middle;
+}
+
+.ztv-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ztv-play-badge-inline {
+  margin-top: 1.15rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ztv-play-badge-inline-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  color: var(--muted) !important;
+  font-size: 0.84rem;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.ztv-play-badge-inline-link:hover {
+  color: var(--accent-dim) !important;
+}
+
+.ztv-play-badge-inline-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 6px;
+  border-radius: 12px;
+}
+
+.ztv-play-badge-inline-link img {
+  height: 46px;
+  width: auto;
+}
+
 .ztv-btn {
   display: inline-flex;
   align-items: center;
